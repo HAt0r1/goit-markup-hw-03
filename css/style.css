@@ -17,12 +17,6 @@ ul {
   list-style-type: none;
 }
 
-.container {
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 /* Header style */
 .main-header {
   border-bottom: 1px solid #e7e9fc;
@@ -32,6 +26,12 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .header-nav {
@@ -202,6 +202,7 @@ ul {
   display: flex;
   gap: 24px;
   justify-content: center;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .user-data {
@@ -215,9 +216,6 @@ ul {
   background-color: #ffffff;
   margin-bottom: 120px;
   align-items: center;
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .team-photo {
@@ -231,9 +229,11 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .user-position {
+  text-align: center;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -261,6 +261,7 @@ ul {
   justify-content: center;
   align-content: center;
   row-gap: 48px;
+  column-gap: 24px;
   margin-bottom: 120px;
 }
 
@@ -293,13 +294,11 @@ ul {
 footer {
   background-color: #2e2f42;
   height: 312px;
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
   padding: 100px 0;
 }
 
 .footer-title {
-  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
