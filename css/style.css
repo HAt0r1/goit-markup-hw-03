@@ -116,7 +116,7 @@ ul {
   font-size: 56px;
   color: #ffffff;
   line-height: 1.07;
-  text-align: center;
+  justify-content: center;
   letter-spacing: 0.02em;
   max-width: 496px;
   margin-bottom: 48px;
@@ -170,6 +170,7 @@ ul {
   color: #2e2f42;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .info-card .info-text {
@@ -203,6 +204,10 @@ ul {
   justify-content: center;
 }
 
+.user-data {
+  padding: 32px 0;
+}
+
 .user {
   display: flex;
   flex-direction: column;
@@ -225,13 +230,12 @@ ul {
   color: #2e2f42;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding-top: 32px;
+  margin-bottom: 8px;
 }
 
 .user-position {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-bottom: 32px;
 }
 
 /* Fourth Section style */
@@ -256,19 +260,19 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  gap: 24px;
+  row-gap: 48px;
   margin-bottom: 120px;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  width: calc((100%-48px) / 3);
-  border: 1px solid #e7e9fc;
 }
 
 .portfolio-photo {
   width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
 }
 
 .card .portfolio-name {
@@ -277,14 +281,12 @@ ul {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding: 32px 16px 0;
   margin-bottom: 8px;
 }
 
 .card .portfolio-type {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding: 0 16px 32px;
 }
 
 /* Footer style */
@@ -297,6 +299,7 @@ footer {
 }
 
 .footer-title {
+  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
@@ -307,7 +310,7 @@ footer {
   text-decoration: none;
   margin-top: 101.5px;
   margin-left: 200px;
-  margin-bottom: 17.5px;
+  margin-bottom: 16px;
 }
 
 .footer-title .span-footer {
