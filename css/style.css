@@ -224,7 +224,6 @@ ul {
   display: flex;
   gap: 24px;
   justify-content: center;
-  border-radius: 0px 0px 4px 4px;
 }
 
 .user-data {
@@ -238,6 +237,7 @@ ul {
   background-color: #ffffff;
   margin-bottom: 120px;
   align-items: center;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-photo {
@@ -299,6 +299,7 @@ ul {
 .portfolio-data {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .card .portfolio-name {
