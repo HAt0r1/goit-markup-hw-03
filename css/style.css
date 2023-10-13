@@ -32,7 +32,6 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
 }
 
 .header-nav {
@@ -110,6 +109,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 188px 0;
 }
 
 .hero-title {
@@ -118,23 +118,22 @@ ul {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  padding-top: 188px;
-  width: 496px;
+  max-width: 496px;
   margin-bottom: 48px;
 }
 
 .hero-button {
-  align-items: flex-start;
+  display: block;
+  min-width: 169px;
+  height: 56px;
   color: #ffffff;
   background-color: #4d5ae5;
   border: none;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  padding: 16px 32px;
   border-radius: 4px;
   cursor: pointer;
-  margin-bottom: 188px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -147,9 +146,10 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 120px 0;
 }
 
-.main-info-title {
+.visual-hidden {
   display: none;
 }
 
@@ -157,12 +157,11 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 120px 0;
   gap: 24px;
 }
 
 .info-card {
-  width: 264px;
+  width: calc((100%-72px) / 4);
 }
 
 .info-card .info-title {
@@ -183,6 +182,7 @@ ul {
   background-color: #f4f4fd;
   display: flex;
   flex-direction: column;
+  padding: 120px 0;
 }
 
 .team-section-title {
@@ -240,6 +240,7 @@ ul {
   flex-direction: column;
   align-items: center;
   background-color: #ffffff;
+  padding: 120px 0;
 }
 
 .portfolio-title {
@@ -292,6 +293,7 @@ footer {
   height: 312px;
   display: flex;
   flex-direction: column;
+  padding: 100px 0;
 }
 
 .footer-title {
