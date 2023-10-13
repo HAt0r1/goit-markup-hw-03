@@ -1,14 +1,37 @@
-/* Body Presets */
+/* Presets */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
+  box-sizing: border-box;
 }
-
-/* Header style */
-.nav-links {
+ul {
   list-style-type: none;
 }
+/* Header style */
+.main-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-right: 332px;
+}
+
 .main-nav-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -18,9 +41,13 @@ body {
   text-transform: uppercase;
   color: #4d5ae5;
   text-decoration: none;
+  padding: 25.5px 0;
+  margin-left: 156px;
 }
+
 .span-nav-logo {
   color: #2e2f42;
+  margin-right: 76px;
 }
 
 .nav-link {
@@ -42,8 +69,11 @@ body {
 }
 
 .nav-contacts-list {
+  display: flex;
   list-style-type: none;
+  gap: 40px;
 }
+
 .address-link {
   font-size: 16px;
   line-height: 1.5;
@@ -60,6 +90,10 @@ body {
 /* First Section style */
 .hero-section {
   background-color: #2e2f42;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-title {
@@ -68,16 +102,24 @@ body {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
+  padding-top: 188px;
+  width: 496px;
+  margin-bottom: 48px;
 }
 
 .hero-button {
+  align-items: flex-start;
   color: #ffffff;
   background-color: #4d5ae5;
   border: none;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  padding: 16px 32px;
+  border-radius: 4px;
   cursor: pointer;
+  margin-bottom: 188px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .hero-button:hover,
@@ -85,8 +127,26 @@ body {
   background-color: #404bbf;
 }
 /* Second Section style */
+.info-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-info-title {
+  display: none;
+}
+
 .info-section-list {
-  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 0;
+  gap: 24px;
+}
+
+.info-card {
+  width: 264px;
 }
 
 .info-card .info-title {
@@ -105,6 +165,8 @@ body {
 /* Third Section style */
 .team-section {
   background-color: #f4f4fd;
+  display: flex;
+  flex-direction: column;
 }
 
 .team-section-title {
@@ -114,14 +176,31 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-top: 120px;
+  margin-bottom: 72px;
 }
 
 .team-card {
   list-style-type: none;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
 }
 
 .user {
+  display: flex;
+  flex-direction: column;
+  width: calc((100%-72px) / 4);
   background-color: #ffffff;
+  margin-bottom: 120px;
+  align-items: center;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.team-photo {
+  width: 100%;
 }
 
 .user-name {
@@ -130,15 +209,20 @@ body {
   color: #2e2f42;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  padding-top: 32px;
 }
 
 .user-position {
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-bottom: 32px;
 }
 
 /* Fourth Section style */
 .portfolio-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #ffffff;
 }
 
@@ -146,10 +230,28 @@ body {
   font-size: 36px;
   color: #2e2f42;
   line-height: 1.11;
+  margin-top: 120px;
+  margin-bottom: 72px;
 }
 
 .portfolio-cards {
-  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 24px;
+  margin-bottom: 120px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: calc((100%-48px) / 3);
+  border: 1px solid #e7e9fc;
+}
+
+.portfolio-photo {
+  width: 100%;
 }
 
 .card .portfolio-name {
@@ -158,16 +260,22 @@ body {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  padding: 32px 16px 0;
+  margin-bottom: 8px;
 }
 
 .card .portfolio-type {
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 0 16px 32px;
 }
 
 /* Footer style */
 footer {
   background-color: #2e2f42;
+  height: 312px;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-title {
@@ -179,6 +287,9 @@ footer {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration: none;
+  margin-top: 101.5px;
+  margin-left: 200px;
+  margin-bottom: 17.5px;
 }
 
 .footer-title .span-footer {
@@ -189,4 +300,6 @@ footer {
   color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-left: 200px;
+  width: 264px;
 }
