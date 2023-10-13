@@ -27,6 +27,11 @@ ul {
   padding: 0 15px;
 }
 
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 /* Header style */
 .main-header {
   border-bottom: 1px solid #e7e9fc;
@@ -44,12 +49,6 @@ ul {
 .header-nav {
   display: flex;
   align-items: center;
-}
-
-.container {
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 
 .nav-links {
