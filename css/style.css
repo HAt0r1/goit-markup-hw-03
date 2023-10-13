@@ -46,6 +46,12 @@ ul {
   align-items: center;
 }
 
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .nav-links {
   display: flex;
   gap: 40px;
